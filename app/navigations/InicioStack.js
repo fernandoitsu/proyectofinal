@@ -1,16 +1,16 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import Cliente from "../screens/Cliente";
+import Inicio from "../screens/Inicio";
 
 const Stack = createStackNavigator();
 
-export default function ClienteStack() {
+export default function InicioStack() {
     return(
         <Stack.Navigator>
             <Stack.Screen 
-                name="cliente"
-                component={Cliente}
-                options={{title: "LISTADO DE CLIENTES"}}
+                name="inicio"
+                component={Inicio}
+                options={{title: "INICIO"}}
             />
         </Stack.Navigator>
     );

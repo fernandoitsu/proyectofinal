@@ -1,18 +1,17 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import Menu from "../screens/Menu";
+import Contacto from "../screens/Contacto";
 
 const Stack = createStackNavigator();
 
-export default function MenuStack() {
+export default function ContactoStack() {
     return(
         <Stack.Navigator>
             <Stack.Screen 
-                name="menu"
-                component={Menu}
-                options={{title: "BIENVENIDOS"}}
+                name="contacto"
+                component={Contacto}
+                options={{title: "CONTACTO"}}
             />
         </Stack.Navigator>
     );
 }
-

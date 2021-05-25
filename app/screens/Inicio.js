@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text } from "react-native";
 
-export default function Cliente() {
+export default function Inicio() {
     return (
         <View>
-            <Text>Clientes</Text>
+            <Text>PRINCIPAL</Text>
         </View>
     );
 }

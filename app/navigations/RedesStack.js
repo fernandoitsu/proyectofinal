@@ -1,18 +1,17 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import Product from "../screens/Producto";
+import Redes from "../screens/Redes";
 
 const Stack = createStackNavigator();
 
-export default function ProductoStack() {
+export default function RedesStack() {
     return(
         <Stack.Navigator>
             <Stack.Screen 
-                name="product"
-                component={Product}
-                options={{title: "CATALOGO DE PRODUCTOS"}}
+                name="redes"
+                component={Redes}
+                options={{title: "REDES SOCIALES"}}
             />
         </Stack.Navigator>
     );
 }
-

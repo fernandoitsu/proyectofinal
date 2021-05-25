@@ -4,9 +4,12 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Icon } from "react-native-elements";
 
 import Menu from "./MenuStack";
-import Producto from "./ProductoStack";
-import Cliente from "./ClienteStack";
-import Cuenta from "./CuentaStack";
+import Viajes from "./ViajesStack";
+import Inicio from "./InicioStack";
+import Somos from "./SomosStack";
+import Fotos from "./FotosStack"
+import Contacto from "./ContactoStack"
+import Redes from "./RedesStack"
 
 const Tab = createBottomTabNavigator();
 
@@ -17,7 +20,7 @@ export default function Navigation() {
           initialRouteName="menu"
           tabBarOptions={{
             inactiveTintColor: "#646464",
-            activeTintColor: "#00a680"
+            activeTintColor: "#00a685"
           }}
           screenOptions={({ route }) => ({
             tabBarIcon: ({ color }) => screenOptions(route, color)
@@ -29,20 +32,36 @@ export default function Navigation() {
               options={{ title: "HOME" }}
             />
             <Tab.Screen
-              name="producto"
-              component={Producto}
-              options={{ title: "CATALOGO" }}
+              name="inicio"
+              component={Inicio}
+              options={{ title: "INICIO" }}
             />
             <Tab.Screen
-              name="cliente"
-              component={Cliente}
-              options={{ title: "CLIENTES" }}
+              name="somos"
+              component={Somos}
+              options={{ title: "¿QUIENES SOMOS?" }}
             />
             <Tab.Screen
-              name="cuenta"
-              component={Cuenta}
-              options={{ title: "CUENTA" }}
+              name="viajes"
+              component={Viajes}
+              options={{ title: "VIAJES" }}
             />
+            <Tab.Screen
+              name="fotos"
+              component={Fotos}
+              options={{ title: "FOTOS" }}
+            />      
+            <Tab.Screen
+              name="contacto"
+              component={Contacto}
+              options={{ title: "CONTACTO" }}
+            />     
+            <Tab.Screen
+              name="redes"
+              component={Redes}
+              options={{ title: "REDES SOCIALES" }}
+            />          
+            
           </Tab.Navigator>
         </NavigationContainer>
       );
