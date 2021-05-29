@@ -5,7 +5,6 @@ import { Icon } from "react-native-elements";
 
 import Menu from "./MenuStack";
 import Viajes from "./ViajesStack";
-import Inicio from "./InicioStack";
 import Somos from "./SomosStack";
 import Fotos from "./FotosStack"
 import Contacto from "./ContactoStack"
@@ -30,12 +29,7 @@ export default function Navigation() {
               name="menu"
               component={Menu}
               options={{ title: "HOME" }}
-            />
-            <Tab.Screen
-              name="inicio"
-              component={Inicio}
-              options={{ title: "INICIO" }}
-            />
+            />            
             <Tab.Screen
               name="somos"
               component={Somos}

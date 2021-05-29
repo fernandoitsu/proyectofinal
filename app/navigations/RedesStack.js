@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import Redes from "../screens/Redes";
+import Redes from "../screens/Redes/Redes";
 
 const Stack = createStackNavigator();
 

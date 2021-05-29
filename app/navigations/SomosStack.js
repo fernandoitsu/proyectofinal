@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import Somos from "../screens/Somos";
+import Somos from "../screens/Somos/Somos";
 
 const Stack = createStackNavigator();
 
@@ -10,7 +10,7 @@ export default function SomosStack() {
             <Stack.Screen 
                 name="somos"
                 component={Somos}
-                options={{title: "¿QUIENES SOMOS?"}}
+                options={{title: " ECOURUAPANI:  ¿QUIENES SOMOS?  "}}
             />
         </Stack.Navigator>
     );

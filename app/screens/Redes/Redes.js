@@ -5,7 +5,7 @@ export default function Redes() {
     return (
         <div>
             <View>
-            <Text>Facebook</Text>
+            <Text>https://www.facebook.com/canekefey</Text>
             </View>
             <View>
             <Text>Instagram</Text>

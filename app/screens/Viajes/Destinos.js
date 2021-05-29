@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text } from "react-native";
 
-export default function Somos() {
+export default function Destinos() {
     return (
         <View>
-            <Text>ECOURUAPANI</Text>
+            <Text> ¡CALENDARIO DE VIAJES PROGRAMADOS! </Text>
         </View>
     );
 }

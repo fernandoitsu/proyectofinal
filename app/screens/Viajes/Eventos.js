@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text } from "react-native";
 
-export default function Contacto() {
+export default function Eventos() {
     return (
         <View>
-            <Text>Telefono</Text>
+            <Text>¡¡¡PROXIMOS EVENTOS!!!</Text>
         </View>
     );
 }
