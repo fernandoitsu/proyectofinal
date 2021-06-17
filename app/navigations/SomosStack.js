@@ -10,7 +10,7 @@ export default function SomosStack() {
             <Stack.Screen 
                 name="somos"
                 component={Somos}
-                options={{title: " ECOURUAPANI:  ¿QUIENES SOMOS?  "}}
+                options={{title: <h1><center> " ¿QUIENES SOMOS? " </center></h1>}}
             />
         </Stack.Navigator>
     );

@@ -9,6 +9,8 @@ export default function Fotos() {
     return (
 
         <ScrollView centerContent={true} styles={styles.viewBody}>
+
+           
             <Text style={styles.textTitle}>FOTOS</Text>
 
             <View style={styles.viewBtn}>            
@@ -16,6 +18,7 @@ export default function Fotos() {
                 style={styles.photo}
                 source={require('./../../../assets/camara.png')}
             />
+          
 
             {list.map((item, i) => (
                 <ListItem key={i} bottomDivider>
@@ -64,19 +67,23 @@ const styles = StyleSheet.create({
       marginRight: 30
     },
     textTitle: {
-      marginTop: 20,
-      marginBottom: 20,
+      color: '#008000',
       textAlign: "center",
       fontSize: 30,
-      fontWeight: "bold"
+      fontWeight: "bold", 
+      marginTop: 4,
+      paddingVertical: 6,      
+      borderWidth: 6,
+      borderColor: '#20232a',
+      backgroundColor: "#000000", 
     },
     btnStyle: {
       backgroundColor: "#00a680"
     },
     btnContainer: {
-      width: "70%",
-      marginBottom: 5,
-      marginTop: 5
+      width: "20%",
+      marginBottom: 10,
+      marginTop: 10
     },
     viewBtn: {
       flex: 6,

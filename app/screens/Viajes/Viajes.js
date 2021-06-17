@@ -8,15 +8,20 @@ export default function Viajes() {
     const navigation = useNavigation();
     return (
 
-        <ScrollView centerContent={true} styles={styles.viewBody}>
-            <Text style={styles.textTitle}>VIAJES</Text>
+      
 
+        <ScrollView centerContent={true} styles={styles.viewBody}>
+
+           
+            <Text style={styles.textTitle}> " VIAJES " </Text>
             <View style={styles.viewBtn}>            
             <Image
                 style={styles.photo}
-                style={{ width: 500, height: 300}}
+                style={{ width: 700, height: 400}}
                 source={require('./../../../assets/viajes.jpg')}
             />
+
+          
 
             {list.map((item, i) => (
                 <ListItem key={i} bottomDivider>
@@ -53,19 +58,25 @@ const styles = StyleSheet.create({
       marginRight: 30
     },
     textTitle: {
-      marginTop: 20,
-      marginBottom: 20,
+      color: '#008000',
       textAlign: "center",
       fontSize: 30,
-      fontWeight: "bold"
+      fontWeight: "bold", 
+      marginTop: 4,
+      paddingVertical: 6,      
+      borderWidth: 6,
+      
+      borderColor: '#20232a',
+      backgroundColor: "#000000", 
     },
     btnStyle: {
-      backgroundColor: "#00a680"
+      backgroundColor: "#006400"
     },
     btnContainer: {
-      width: "70%",
-      marginBottom: 5,
-      marginTop: 5
+      width: "40%",
+      marginBottom: 10,
+      marginTop: 10
+      
     },
     viewBtn: {
       flex: 6,
@@ -74,8 +85,8 @@ const styles = StyleSheet.create({
     photo: {
         height: 180,
         width: 180,
-        marginBottom: 20,
-        marginTop: 20
+        marginBottom: 50,
+        marginTop: 0
       }
   });
 

@@ -14,27 +14,27 @@ export default function FotosStack() {
             <Stack.Screen 
                 name="fotos"
                 component={Fotos}
-                options={{title: "MIRA NUESTRAS FOTOS"}}
+                options={{title: <h1><center> "MIRA NUESTRAS FOTOS" </center></h1>}}
             />
             <Stack.Screen 
                 name="senderismo"
                 component={Senderismo}
-                options={{title: "SENDERISMO"}}
+                options={{title: <h1><center> "SENDERISMO" </center></h1>}}
             />
             <Stack.Screen 
                 name="rappel"
                 component={Rappel}
-                options={{title: "RAPPEL"}}
+                options={{title: <h1><center> "RAPPEL" </center></h1>}}
             />  
             <Stack.Screen 
                 name="escalada"
                 component={Escalada}
-                options={{title: "ESCALADA"}}
+                options={{title: <h1><center> "ESCALADA" </center></h1>}}
             />  
             <Stack.Screen 
                 name="ciclismo"
                 component={Ciclismo}
-                options={{title: "CICLISMO"}}
+                options={{title: <h1><center> "CICLISMO" </center></h1>}}
             />                     
         </Stack.Navigator>
     );

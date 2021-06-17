@@ -1,8 +1,8 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import Viajes from "../screens/Viajes/Viajes";
-import Destinos from "../screens/Viajes/Destinos";
 import Eventos from "../screens/Viajes/Eventos";
+import viajesAgregar from "../screens/Viajes/viajesAgregar";
 
 const Stack = createStackNavigator();
 
@@ -12,17 +12,17 @@ export default function ViajesStack() {
             <Stack.Screen 
                 name="viajes"
                 component={Viajes}
-                options={{title: "SERVICIO DE VIAJES"}}
+                options={{title: <h1><center>" SERVICIO DE VIAJES " </center></h1>}}
             />
             <Stack.Screen 
                 name="destinos"
-                component={Destinos}
-                options={{title: "NUESTROS DESTINOS"}}
+                component={viajesAgregar}
+                options={{title: <h1><center> "NUESTROS DESTINOS" </center></h1>}}
             />
             <Stack.Screen 
                 name="eventos"
                 component={Eventos}
-                options={{title: "EVENTOS"}}
+                options={{title: <h1><center> "EVENTOS" </center></h1>}}
             />            
         </Stack.Navigator>
     );

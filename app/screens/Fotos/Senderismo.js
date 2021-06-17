@@ -1,4 +1,46 @@
-import React from 'react';
+import React from 'react'
+import  {RViewerTrigger, RViewer} from 'react-viewerjs';
+
+function App(){
+
+  let imagenes=[
+    require("./../img/senderismo1.jpg"),
+    require("./../img/senderismo2.jpg"),
+    require("./../img/senderismo3.jpg"),
+    require("./../img/senderismo4.jpg"),
+    require("./../img/senderismo5.jpg"),
+    require("./../img/senderismo6.jpg"), 
+    
+    
+  ];
+
+  return(
+    <div>
+        <RViewer imageUrls={imagenes}>
+          <div style={{display: 'flex', marginTop: '40px'}}>
+            {imagenes.map((imagen, index)=>{
+              return(
+                <RViewerTrigger index={index}>
+                  <img src={imagen} style={{width:'150px', height:'150px', marginLeft:'20px', border:'2px solid black'}}/>
+                </RViewerTrigger>
+              )
+            })}
+
+          </div>
+        </RViewer>
+    </div>
+
+  );
+}
+
+export default App;
+
+
+
+
+
+
+/*import React from 'react';
 import { Image, StyleSheet, View, ScrollView, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Button, ListItem, Icon } from "react-native-elements";
@@ -9,24 +51,29 @@ export default function Senderismo() {
     return (
 
         <ScrollView centerContent={true} styles={styles.viewBody}>
-            <Text style={styles.textTitle}>FOTOS DE ESCALADA</Text>
+            <Text style={styles.textTitle}>FOTOS DE SENDERISMO</Text>
 
             <div>
             <View style={styles.photo}>
-                
+            
                 <Image
-                    style={{ width: 437, height: 293}}                
+                    
+                    style={{ width: 600, height: 450}}                
                     resizeMode='contain'
                     source={require('./../../../assets/senderismo1.jpg')}                    
                 /> 
-            </View> 
-            <View style={styles.photo}>
                 
+            </View> 
+            
+            <View style={styles.photo}>
+            
                 <Image
-                    style={{ width: 437, height: 293}}                
+                    
+                    style={{ width: 600, height: 380}}                
                     resizeMode='contain'
                     source={require('./../../../assets/senderismo2.jpg')}                    
                 /> 
+               
             </View> 
 
             </div>                                   
@@ -60,8 +107,9 @@ const styles = StyleSheet.create({
       alignItems: "center",
     },
     photo: {
-        height: 180,
-        width: 180,
+        justifyContent: 'center',
+        alignItems: 'center',
+        
         marginBottom: 20,
         marginTop: 20
       }
@@ -70,3 +118,4 @@ const styles = StyleSheet.create({
   const list = [
     
   ];
+*/

@@ -1,4 +1,41 @@
-import React from 'react';
+import React from 'react'
+import  {RViewerTrigger, RViewer} from 'react-viewerjs';
+
+function App(){
+
+  let imagenes=[
+    require("./../img/escalada1.JPG"),
+    require("./../img/escalada2.JPG"),
+    require("./../img/escalada3.JPG"),
+    require("./../img/escalada4.JPG"),
+    require("./../img/escalada5.JPG"),
+ 
+  ];
+
+  return(
+    <div>
+        <RViewer imageUrls={imagenes}>
+          <div style={{display: 'flex', marginTop: '40px'}}>
+            {imagenes.map((imagen, index)=>{
+              return(
+                <RViewerTrigger index={index}>
+                  <img src={imagen} style={{width:'150px', height:'150px', marginLeft:'20px', border:'2px solid black'}}/>
+                </RViewerTrigger>
+              )
+            })}
+
+          </div>
+        </RViewer>
+    </div>
+
+  );
+}
+
+export default App;
+
+
+
+/*import React from 'react';
 import { Image, StyleSheet, View, ScrollView, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Button, ListItem, Icon } from "react-native-elements";
@@ -12,21 +49,26 @@ export default function Escalada() {
             <Text style={styles.textTitle}>FOTOS DE ESCALADA</Text>
 
             <div>
-            <View style={styles.photo}>
-                
+            <View >
+            <center>
                 <Image
+                    style={styles.photo}
                     style={{ width: 437, height: 293}}                
                     resizeMode='contain'
                     source={require('./../../../assets/escalada1.JPG')}                    
                 /> 
+                </center>
             </View> 
-            <View style={styles.photo}>
-                
+            <br></br>
+            <View>
+            <center>
                 <Image
+                    style={styles.photo}
                     style={{ width: 437, height: 293}}                
                     resizeMode='contain'
                     source={require('./../../../assets/escalada2.jpg')}                    
                 /> 
+                </center>
             </View> 
 
             </div>                                   
@@ -60,8 +102,9 @@ const styles = StyleSheet.create({
       alignItems: "center",
     },
     photo: {
-        height: 180,
-        width: 180,
+      justifyContent: 'center',
+      alignItems: 'center',
+        
         marginBottom: 20,
         marginTop: 20
       }
@@ -69,4 +112,4 @@ const styles = StyleSheet.create({
 
   const list = [
     
-  ];
+  ];*/

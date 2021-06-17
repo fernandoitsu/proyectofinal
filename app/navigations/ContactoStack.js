@@ -10,7 +10,7 @@ export default function ContactoStack() {
             <Stack.Screen 
                 name="contacto"
                 component={Contacto}
-                options={{title: "CONTACTO"}}
+                options={{title: <h1><center> "CONTACTO" </center></h1>}}
             />
         </Stack.Navigator>
     );

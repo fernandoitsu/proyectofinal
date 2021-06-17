@@ -1,4 +1,43 @@
-import React from 'react';
+import React from 'react'
+import  {RViewerTrigger, RViewer} from 'react-viewerjs';
+
+function App(){
+
+  let imagenes=[
+    require("./../img/rappel1.JPG"),
+    require("./../img/rappel2.JPG"),
+    require("./../img/rappel3.JPG"),
+    require("./../img/rappel4.JPG"),
+    require("./../img/rappel5.JPG"),
+ 
+  ];
+
+  return(
+    <div>
+        <RViewer imageUrls={imagenes}>
+          <div style={{display: 'flex', marginTop: '40px'}}>
+            {imagenes.map((imagen, index)=>{
+              return(
+                <RViewerTrigger index={index}>
+                  <img src={imagen} style={{width:'150px', height:'150px', marginLeft:'20px', border:'2px solid black'}}/>
+                </RViewerTrigger>
+              )
+            })}
+
+          </div>
+        </RViewer>
+    </div>
+
+  );
+}
+
+export default App;
+
+
+
+
+
+/*import React from 'react';
 import { Image, StyleSheet, View, ScrollView, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Button, ListItem, Icon } from "react-native-elements";
@@ -9,24 +48,26 @@ export default function Rappel() {
     return (
 
         <ScrollView centerContent={true} styles={styles.viewBody}>
-            <Text style={styles.textTitle}>FOTOS DE ESCALADA</Text>
+            <Text style={styles.textTitle}>FOTOS DE RAPPEL</Text>
 
             <div>
-            <View style={styles.photo}>
-                
+            <View style={styles.photo}>            
                 <Image
-                    style={{ width: 437, height: 293}}                
+                    
+                    style={{ width: 700, height: 600}}                
                     resizeMode='contain'
                     source={require('./../../../assets/rappel1.JPG')}                    
                 /> 
-            </View> 
-            <View style={styles.photo}>
                 
-                <Image
-                    style={{ width: 437, height: 293}}                
+            </View> 
+            
+            <View style={styles.photo}>
+                    <Image
+                    
+                    style={{ width: 600, height: 600}}                
                     resizeMode='contain'
                     source={require('./../../../assets/rappel2.JPG')}                    
-                /> 
+                />                 
             </View> 
 
             </div>                                   
@@ -60,8 +101,8 @@ const styles = StyleSheet.create({
       alignItems: "center",
     },
     photo: {
-        height: 180,
-        width: 180,
+      justifyContent: 'center',
+      alignItems: 'center',
         marginBottom: 20,
         marginTop: 20
       }
@@ -69,4 +110,4 @@ const styles = StyleSheet.create({
 
   const list = [
     
-  ];
+  ];*/

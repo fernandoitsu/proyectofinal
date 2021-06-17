@@ -10,7 +10,7 @@ export default function RedesStack() {
             <Stack.Screen 
                 name="redes"
                 component={Redes}
-                options={{title: "REDES SOCIALES"}}
+                options={{title: <h1><center> "REDES SOCIALES" </center></h1>}}
             />
         </Stack.Navigator>
     );

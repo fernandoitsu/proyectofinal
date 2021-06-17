@@ -65,20 +65,23 @@ function screenOptions(route, color) {
   let iconName;
 
   switch (route.name) {
-    case "alumnos":
-      iconName = "account";
+    case "menu":
+      iconName = "home-variant";
       break;
-    case "grupos":
+    case "somos":
       iconName = "account-group";
       break;
-    case "maestros":
-      iconName = "account-check";
+    case "viajes":
+      iconName = "bus";
       break;
-    case "materias":
-      iconName = "book";
+    case "fotos":
+      iconName = "camera";
       break;
-    case "promedios":
-      iconName = "chart-bar";
+    case "contacto":
+      iconName = "comment";
+      break;
+      case "redes":
+      iconName = "facebook";
       break;
     default:
       break;
