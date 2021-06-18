@@ -9,6 +9,11 @@ export default function Contacto() {
         <ScrollView centerContent={true} styles={styles.viewBody}>
 
           <View style={styles.viewBtn}> 
+            <Image
+                style={styles.photo}
+                style={{ width: 600, height: 350}}
+                source={require('./../../../assets/ubicacion.jpg')}
+            />
             
             <Text style={styles.textTitle}>ECOURUAPANI URUAPAN S.A. de C.V.</Text>
             <Text style={styles.textTitle}>DOMICILIO: MIGUEL HIDALGO # 82</Text>
@@ -31,7 +36,7 @@ const styles = StyleSheet.create({
     textTitle: {   
       color: '#f8f8ff',
       textAlign: "center",
-      fontSize: 30,
+      fontSize: 25,
       fontWeight: "bold", 
       marginTop: 4,
       paddingVertical: 6,      

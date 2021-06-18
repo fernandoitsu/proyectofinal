@@ -20,27 +20,27 @@ export default function viajesForm(props) {
             <Text style={styles.textTitle}>{props.name}</Text>
             <Input
                 placeholder='Lugar'
-                leftIcon={{ type: 'material-community', name: 'cart' }}
+                leftIcon={{ type: 'material-community', name: 'map-search' }}
                 onChange={(e) => setlugar(e.nativeEvent.text)}
             />
             <Input
                 placeholder='Fecha'
-                leftIcon={{ type: 'material-community', name: 'currency-usd' }}
+                leftIcon={{ type: 'material-community', name: 'calendar-check' }}
                 onChange={(e) => setfecha(e.nativeEvent.text)}
             />
             <Input
                 placeholder='Nombre'
-                leftIcon={{ type: 'material-community', name: 'format-list-bulleted-square' }}
+                leftIcon={{ type: 'material-community', name: 'card-account-details' }}
                 onChange={(e) => setnombre(e.nativeEvent.text)}
             />
             <Input
                 placeholder='Telefono'
-                leftIcon={{ type: 'material-community', name: 'currency-usd' }}
+                leftIcon={{ type: 'material-community', name: 'cellphone-basic' }}
                 onChange={(e) => setTelefono(e.nativeEvent.text)}
             />
             <Input
                 placeholder='Numero de Personas'
-                leftIcon={{ type: 'material-community', name: 'format-list-bulleted-square' }}
+                leftIcon={{ type: 'material-community', name: 'human-male-male' }}
                 onChange={(e) => setnumPersonas(e.nativeEvent.text)}
             />
             <Button 

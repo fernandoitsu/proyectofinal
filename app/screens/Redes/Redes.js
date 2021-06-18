@@ -7,8 +7,8 @@ export default function Redes() {
         <ScrollView centerContent={true} styles={styles.viewBody}>
             
             <View style={styles.viewBtn}> 
-            <Text style={styles.textTitle}>FACEBOOK: </Text>
-            <Text style={styles.textTitle}>INSTAGRAM: </Text>
+            <Text style={styles.textTitle}>https://www.facebook.com/canekefey/?ref=pages_you_manage </Text>
+            <Text style={styles.textTitle}>https://www.instagram.com/chanekefey/?hl=es-la </Text>
             </View>      
             
         </ScrollView>    
