@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigation } from '@react-navigation/native';
 import { Alert, Modal, Pressable, StyleSheet, View, Text, ScrollView, Image } from "react-native";
 import { Button, Icon, Input } from 'react-native-elements';
 
@@ -13,9 +14,7 @@ export default function viajesForm(props) {
     return (
 
       
-      <ScrollView centerContent={true} styles={styles.viewBody}>
-
-        <View>            
+         <View>            
 
             <Text style={styles.textTitle}>{props.name}</Text>
             <Input
@@ -43,6 +42,8 @@ export default function viajesForm(props) {
                 leftIcon={{ type: 'material-community', name: 'human-male-male' }}
                 onChange={(e) => setnumPersonas(e.nativeEvent.text)}
             />
+
+            
             <Button 
                 title="Reservar Destino"
                 buttonStyle={styles.btnStyle}
@@ -75,16 +76,11 @@ export default function viajesForm(props) {
                 })
                 }}
             />
-            <View style={styles.viewBtn}>
-            <Image style={styles.photo}                    
-                  style={{ width: 500, height: 350}}                
-                  resizeMode='contain'
-                  source={require('./../../../assets/viajes programados.png')}                    
-              />
-              </View>
+            
+                
 
         </View>
-    </ScrollView>
+    
     );
 }
 
@@ -121,10 +117,47 @@ const styles = StyleSheet.create({
       width: 180,
       marginBottom: 20,
       marginTop: 20
+    },
+    centeredView: {
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+      marginTop: 22
+    },
+    modalView: {
+      margin: 20,
+      backgroundColor: "white",
+      borderRadius: 20,
+      padding: 35,
+      alignItems: "center",
+      shadowColor: "#000",
+      shadowOffset: {
+        width: 0,
+        height: 2
+      },
+      shadowOpacity: 0.25,
+      shadowRadius: 4,
+      elevation: 5
+    },
+    button: {
+      borderRadius: 20,
+      padding: 10,
+      elevation: 2
+    },
+    buttonOpen: {
+      backgroundColor: "#F194FF",
+    },
+    buttonClose: {
+      backgroundColor: "#2196F3",
+    },
+    textStyle: {
+      color: "white",
+      fontWeight: "bold",
+      textAlign: "center"
+    },
+    modalText: {
+      marginBottom: 15,
+      textAlign: "center"
     }
 });
 
-const list = [
-  
-  
-];

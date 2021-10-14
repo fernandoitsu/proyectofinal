@@ -4,11 +4,11 @@ import  {RViewerTrigger, RViewer} from 'react-viewerjs';
 function App(){
 
   let imagenes=[
-    require("./../img/rappel1.JPG"),
-    require("./../img/rappel2.JPG"),
-    require("./../img/rappel3.JPG"),
-    require("./../img/rappel4.JPG"),
-    require("./../img/rappel5.JPG"),
+    require("./../../../assets/rappel1.JPG"),
+    require("./../../../assets/rappel2.JPG"),
+    require("./../../../assets/rappel3.JPG"),
+    require("./../../../assets/rappel4.JPG"),
+    require("./../../../assets/rappel5.JPG"),
  
   ];
 

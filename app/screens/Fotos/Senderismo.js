@@ -4,12 +4,12 @@ import  {RViewerTrigger, RViewer} from 'react-viewerjs';
 function App(){
 
   let imagenes=[
-    require("./../img/senderismo1.jpg"),
-    require("./../img/senderismo2.jpg"),
-    require("./../img/senderismo3.jpg"),
-    require("./../img/senderismo4.jpg"),
-    require("./../img/senderismo5.jpg"),
-    require("./../img/senderismo6.jpg"), 
+    require("./../../../assets/senderismo1.jpg"),
+    require("./../../../assets/senderismo2.jpg"),
+    require("./../../../assets/senderismo3.jpg"),
+    require("./../../../assets/senderismo4.jpg"),
+    require("./../../../assets/senderismo5.jpg"),
+    require("./../../../assets/senderismo6.jpg"), 
     
     
   ];

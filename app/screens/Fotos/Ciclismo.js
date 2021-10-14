@@ -4,8 +4,8 @@ import  {RViewerTrigger, RViewer} from 'react-viewerjs';
 function App(){
 
   let imagenes=[
-    require("./../img/ciclismo1.jpg"),
-    require("./../img/ciclismo2.jpg"),
+    require("./../../../assets/ciclismo1.jpg"),
+    require("./../../../assets/ciclismo2.jpg"),
  
   ];
 

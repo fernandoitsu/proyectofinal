@@ -13,7 +13,7 @@ export default function viajesLista(props) {
         {props.elementos.map((item, i) => (
             <ListItem key={i} 
                     bottomDivider 
-                    onPress={()=> {navigation.navigate('viaje-detalle')}}
+                    onPress={()=> {navigation.navigate('viajes-detalle')}}
             >
                 <Icon name={item.icon} type="material-community" />
                 <ListItem.Content>

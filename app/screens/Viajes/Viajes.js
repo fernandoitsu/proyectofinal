@@ -3,6 +3,7 @@ import { Image, StyleSheet, View, ScrollView, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Button, ListItem, Icon } from "react-native-elements";
 
+import viajesLista from "./../../components/Destino/viajesLista";
 
 export default function Viajes() {
     const navigation = useNavigation();
@@ -10,10 +11,9 @@ export default function Viajes() {
 
       
 
-        <ScrollView centerContent={true} styles={styles.viewBody}>
-
-           
+        <ScrollView centerContent={true} styles={styles.viewBody}>           
             <Text style={styles.textTitle}> " VIAJES " </Text>
+
             <View style={styles.viewBtn}>            
             <Image
                 style={styles.photo}
@@ -21,29 +21,42 @@ export default function Viajes() {
                 source={require('./../../../assets/viajes.jpg')}
             />
 
-          
+              <viajesLista elementos={list}/>
 
-            {list.map((item, i) => (
-                <ListItem key={i} bottomDivider>
-                    <Icon name={item.icon} type="material-community" />
-                    <ListItem.Content>
-                      <ListItem.Title>{item.title}</ListItem.Title>
-                    </ListItem.Content>
-                    <ListItem.Chevron />
-                  </ListItem>
-                ))}
-
-                <Button 
+                    <Button 
                     title="DESTINOS"
                     buttonStyle={styles.btnStyle}
                     containerStyle={styles.btnContainer}
                     onPress={() => navigation.navigate("destinos")}
+                    />
+
+                    <Button
+                    title="Lstado Destino"
+                    buttonStyle={styles.btnStyle}
+                    containerStyle={styles.btnContainer}
+                    onPress={() => navigation.navigate("viajes-lista")}
+                    />
+
+                    <Button 
+                    title="Detalle Destinos"
+                    buttonStyle={styles.btnStyle}
+                    containerStyle={styles.btnContainer}
+                    onPress={() => navigation.navigate("viajes-detalle")}
                 />
+
+                
                 <Button 
                     title="EVENTOS"
                     buttonStyle={styles.btnStyle}
                     containerStyle={styles.btnContainer}
                     onPress={() => navigation.navigate("eventos")}
+                />
+
+                <Button 
+                    title="Modal Destinos"
+                    buttonStyle={styles.btnStyle}
+                    containerStyle={styles.btnContainer}
+                    onPress={() => navigation.navigate("viajes-modal")}
                 />
                 
             </View>
@@ -91,6 +104,20 @@ const styles = StyleSheet.create({
   });
 
   const list = [
-    
-    
+    {
+      title: "Destino ",
+      icon: "map-search"
+    },
+    {
+      title: "Destino 2",
+      icon: "map-search"
+    },    
+    {
+      title: "Destino 3",
+      icon: "map-search"
+    },   
+    {
+      title: "Destino 4",
+      icon: "map-search"
+    }
   ];
